@@ -13,7 +13,13 @@ import { SingleComponent } from './pages/single/single.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SendComponent } from './pages/send/send.component';
+import { ReadComponent } from './pages/read/read.component';
 
+
+// Importing forms module
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -27,12 +33,17 @@ import { SendComponent } from './pages/send/send.component';
     SingleComponent,
     ContactComponent,
     HomeComponent,
-    SendComponent
+    SendComponent,
+    ReadComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

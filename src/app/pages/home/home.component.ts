@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { InfobasicoService } from '../../services/infobasico.service';
+import { ExperiencialogrosService } from '../../services/experiencialogros.service';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,8 @@ import { InfobasicoService } from '../../services/infobasico.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private router:Router) { }
+  constructor(private router:Router,
+              private experiencialogrosService: ExperiencialogrosService) { }
 
   ngOnInit() {
   }
@@ -19,10 +21,8 @@ export class HomeComponent implements OnInit {
     if(email.length < 4){
        return;
     }
+    this.router.navigate(['send'],{state:{email:email, opcion:opcion}});
 
-    this.router.navigate(['send',email, opcion,'','',''])
-    //  console.log(opcion)
-      // console.log(email);
   }
 
 }

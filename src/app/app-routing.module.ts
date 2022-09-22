@@ -7,6 +7,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { SingleComponent } from './pages/single/single.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { SendComponent } from './pages/send/send.component';
+import { ReadComponent } from './pages/read/read.component';
 
 
 const app_routes:Routes = [  
@@ -15,7 +16,9 @@ const app_routes:Routes = [
   { path:'blog', component: BlogComponent },
   { path:'single', component: SingleComponent },
   { path:'contact', component: ContactComponent },
-  { path:'send/:email/:opcion/:nombre/:subject/:mensaje', component: SendComponent },
+  { path:'send', component: SendComponent },
+  { path:'read', component: ReadComponent },
+  // { path:'send/:email/:opcion/:nombre/:subject/:mensaje', component: SendComponent },
   { path:'**',pathMatch:'full',redirectTo:'home' }
 ]
 
