@@ -19,7 +19,7 @@ export class InfobasicoService {
      .subscribe((resp: infopersona) =>{
        this.persona = resp;
        this.cargando = false;
-      console.log(resp)
+      //console.log(resp)
      })
   }
 

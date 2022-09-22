@@ -21,7 +21,7 @@ export class SingleService {
 
       this.comentario = resp;
       this.cargando = false;
-      console.log(resp);
+     // console.log(resp);
     })
   }
 }

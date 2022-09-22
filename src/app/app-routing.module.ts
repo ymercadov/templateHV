@@ -17,7 +17,7 @@ const app_routes:Routes = [
   { path:'single', component: SingleComponent },
   { path:'contact', component: ContactComponent },
   { path:'send', component: SendComponent },
-  { path:'read', component: ReadComponent },
+  { path:'read/:Id', component: ReadComponent },
   // { path:'send/:email/:opcion/:nombre/:subject/:mensaje', component: SendComponent },
   { path:'**',pathMatch:'full',redirectTo:'home' }
 ]

@@ -11,7 +11,7 @@ import { ExperiencialogrosService } from '../../services/experiencialogros.servi
 export class HomeComponent implements OnInit {
 
   constructor(private router:Router,
-              private experiencialogrosService: ExperiencialogrosService) { }
+              private experiencialogrosService:ExperiencialogrosService) { }
 
   ngOnInit() {
   }

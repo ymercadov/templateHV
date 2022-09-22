@@ -17,8 +17,12 @@ export class ExperiencialogrosService {
      .subscribe((resp: experiencialogros[]) =>{
        this.experienciaLogros = resp.reverse();
        this.cargando = false;
-      console.log(this.experienciaLogros);
+      //onsole.log(this.experienciaLogros);
      })
+  }
+
+  getExperienciaLogros(id :string){
+    return this.http.get(`https://datosbasicos-782fb-default-rtdb.firebaseio.com/ExperiLogros/${ id }.json`)
   }
 
 }

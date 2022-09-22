@@ -55,6 +55,32 @@
 
     <div class="row blog-item px-3 pb-5" 
         *ngFor="let experiencia of experiencialogrosService.experienciaLogros">
+
+            
+                  <!-- Subscribe Start -->
+<div *ngIf="experiencia.Id == 7" class="container py-5 px-4 bg-secondary text-center">
+    <h1 class="text-white font-weight-bold">Suscribete a My Newsletter</h1>
+    <p class="text-white">Suscríbete y recibe mi último artículo en tu bandeja de entrada</p>
+    <div class="form-inline justify-content-center">
+        <div class="input-group">
+            <input type="text"              
+              class="form-control" 
+              #txtEmail
+              placeholder="Tu Email">
+            <div class="input-group-append">
+              <button 
+                class="btn btn-primary"
+                (click) = "Suscribir( txtEmail.value,1 )"   
+                type="submit">Suscribir</button>
+            </div>
+          </div>
+      </div>
+  </div>
+  <!-- Subscribe End -->
+            
+
+
+
             <div class="col-md-5">
                 <img class="img-fluid mb-4 mb-md-0" [src]="experiencia.logo" alt="Image{{experiencia.Id}}">
             </div>
@@ -134,26 +160,7 @@
 <!-- Blog List End -->
 
 
-<!-- Subscribe Start -->
-<div class="container py-5 px-4 bg-secondary text-center">
-  <h1 class="text-white font-weight-bold">Suscribete a My Newsletter</h1>
-  <p class="text-white">Suscríbete y recibe mi último artículo en tu bandeja de entrada</p>
-  <div class="form-inline justify-content-center">
-      <div class="input-group">
-          <input type="text"              
-            class="form-control" 
-            #txtEmail
-            placeholder="Tu Email">
-          <div class="input-group-append">
-            <button 
-              class="btn btn-primary"
-              (click) = "Suscribir( txtEmail.value,1 )"   
-              type="submit">Suscribir</button>
-          </div>
-        </div>
-    </div>
-</div>
-<!-- Subscribe End -->
+
 
 
 <!-- Blog List Start -->

@@ -15,7 +15,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { SendComponent } from './pages/send/send.component';
 import { ReadComponent } from './pages/read/read.component';
 
-
 // Importing forms module
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
