@@ -19,6 +19,7 @@ import { ReadComponent } from './pages/read/read.component';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HerramientasComponent } from './pages/herramientas/herramientas.component';
 
 
 @NgModule({
@@ -33,7 +34,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ContactComponent,
     HomeComponent,
     SendComponent,
-    ReadComponent
+    ReadComponent,
+    HerramientasComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -42,7 +45,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    NgbModule
+    NgbModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

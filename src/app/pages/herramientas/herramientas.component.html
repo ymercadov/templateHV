@@ -2,13 +2,13 @@
             <div class="container py-5 px-2 bg-primary">
               <div class="row py-5 px-4">
                   <div class="col-sm-6 text-center text-md-left">
-                      <h1 class="mb-3 mb-md-0 text-white text-uppercase font-weight-bold">Sobre mi</h1>
+                      <h1 class="mb-3 mb-md-0 text-white text-uppercase font-weight-bold">Plaraformas conocidas</h1>
                   </div>
                   <div class="col-sm-6 text-center text-md-right">
                       <div class="d-inline-flex pt-2">
-                          <h4 class="m-0 text-white"><a class="text-white" href="">About</a></h4>
-                          <h4 class="m-0 text-white px-2">/</h4>
-                          <h4 class="m-0 text-white">Sobre mi</h4>
+                          <h5 class="m-0 text-white"><a class="text-white" href="">Herramientas</a></h5>
+                          <h5 class="m-0 text-white px-2">/</h5>
+                          <h5 class="m-0 text-white">Plaraformas conocidas</h5>
                       </div>
                   </div>
               </div>
@@ -19,15 +19,67 @@
           <!-- About Start -->
           <div class="container bg-white pt-5">
               <div class="row px-3 pb-5">
-                  <div class="col-md-12">
-                      
-                      <img class="img-fluid float-left w-50 mr-4 mb-3" src="assets/img/about.jpg" alt="Image">
-                      <h5 class="mb-4 font-weight-bold">FORMACION ACADEMICA</h5>
-                      <h5>Ingeniero de sistema</h5>                    
-                      <h6>Universidad Autonoma de Colombia</h6>
-                      <h6>Bogota D.C. 2002</h6>
-                     
-                      <br>
+                  <div class="col-md-12">                      
+                      <h5 class="mb-4 font-weight-bold">Las siguientes herramientas y plataformas las conozco y las manejo:</h5>
+                     <h5>Conocimientos General</h5>     
+                     <div class="input-group m-5">
+                      <div *ngFor="let item of herramientasService.lstherramienta"  class="bootstrap-tagsinput">
+                        <span class="tag label label-info">
+                            {{item.nombre}}
+                          <span data-role="remove">
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                    <h6>Conocimientos y habilidades</h6>   
+                    <div class="input-group m-5">
+                      <div *ngFor="let item of herramientasService.lsttipoHerramienta"  class="bootstrap-tagsinput">                       
+                        <span class="tag label label-info">
+                          <i [class]="item.icono"></i>
+                          {{item.nombre}}
+                          <span data-role="remove">
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+
+
+
+                      <!-- <h5>Herramientas base de datos</h5>
+                      <ul>
+                        <li>Esto</li>
+                        <li>Lo otro</li>
+                        <li>Lo de más allá</li>
+                       </ul>
+                      <h5>Front End</h5>
+                      <ul>
+                        <li>Esto</li>
+                        <li>Lo otro</li>
+                        <li>Lo de más allá</li>
+                       </ul>
+                       <h5>Back End</h5>
+                      <ul>
+                        <li>Esto</li>
+                        <li>Lo otro</li>
+                        <li>Lo de más allá</li>
+                       </ul>
+                      <h5>Modelado de Software</h5>
+                      <ul>
+                        <li>Esto</li>
+                        <li>Lo otro</li>
+                        <li>Lo de más allá</li>
+                       </ul>
+                       <h5>Generador de Reportes</h5>
+                       <ul>
+                         <li>Esto</li>
+                         <li>Lo otro</li>
+                         <li>Lo de más allá</li>
+                        </ul> -->
+
+                       
+
+
+                      <!-- <br>
 
                       <h5>Tecnólogo de Sistemas y Computadores</h5>                    
                       <h6>Corporación politécnica de la costa Atlántico </h6>
@@ -98,7 +150,7 @@ universidad nueva granada, 2011
                             <ngb-progressbar type="primary" [value]="100" [striped]="true" [animated]="true">Editing</ngb-progressbar>
                           </div>
                       </div>
-                  </div>
+                  </div> -->
               </div>
           </div>
           <!-- About End -->

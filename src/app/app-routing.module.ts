@@ -8,6 +8,7 @@ import { SingleComponent } from './pages/single/single.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { SendComponent } from './pages/send/send.component';
 import { ReadComponent } from './pages/read/read.component';
+import { HerramientasComponent } from './pages/herramientas/herramientas.component';
 
 
 const app_routes:Routes = [  
@@ -18,6 +19,7 @@ const app_routes:Routes = [
   { path:'contact', component: ContactComponent },
   { path:'send', component: SendComponent },
   { path:'read/:Id', component: ReadComponent },
+  { path:'tool', component: HerramientasComponent },
   // { path:'send/:email/:opcion/:nombre/:subject/:mensaje', component: SendComponent },
   { path:'**',pathMatch:'full',redirectTo:'home' }
 ]
