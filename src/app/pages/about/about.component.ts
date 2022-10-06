@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { infopersona } from '../../interfaces/info.interface';
 import { InfobasicoService } from '../../services/infobasico.service';
 
 @Component({
