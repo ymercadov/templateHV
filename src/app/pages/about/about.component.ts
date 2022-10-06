@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { infopersona } from '../../interfaces/info.interface';
+import { InfobasicoService } from '../../services/infobasico.service';
 
 @Component({
   selector: 'app-about',
@@ -11,7 +13,7 @@ export class AboutComponent implements OnInit {
   stripedPB: boolean;    
   animatedPB: boolean;    
 
-  constructor() { }
+  constructor(private infobasicoService:InfobasicoService) { }
 
   ngOnInit() {
   }

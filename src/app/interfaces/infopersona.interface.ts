@@ -3,6 +3,7 @@ export interface infopersona {
   cargo?: string;
   direccion?: string;
   foto?: string;
+  about?: string;
   id?: number;
   nombre?: string;
   numeroDoc?: string;

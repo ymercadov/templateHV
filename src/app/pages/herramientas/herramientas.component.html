@@ -21,7 +21,7 @@
               <div class="row px-3 pb-5">
                   <div class="col-md-12">                      
                       <h5 class="mb-4 font-weight-bold">Las siguientes herramientas y plataformas las conozco y las manejo:</h5>
-                     <h5>Conocimientos General</h5>     
+                      <p class="title-buscar"> Conocimientos General</p>     
                      <div class="input-group m-5">
                       <div *ngFor="let item of herramientasService.lstherramienta"  class="bootstrap-tagsinput">
                         <span class="tag label label-info">
@@ -31,7 +31,7 @@
                         </span>
                       </div>
                     </div>
-                    <h6>Conocimientos y habilidades</h6>   
+                    <p class="title-buscar"> Conocimientos y habilidades</p>   
                     <div class="input-group m-5">
                       <div *ngFor="let item of herramientasService.lsttipoHerramienta"  class="bootstrap-tagsinput">                       
                         <span class="tag label label-info">
@@ -43,7 +43,16 @@
                       </div>
                     </div>
 
+                    <p class="title-buscar"> ¿Qué trabajo busco?</p>
 
+                    <ul *ngFor="let item of herramientasService.empleoBusco" class="list-bullet" style="list-style: none;">
+                      <li>{{item.cargo}}</li>
+                      <li>{{item.area}}</li>
+                      <li>{{item.rama}}</li>
+                      <li>{{item.Ciudad}}</li>
+                      <li>{{item.tipocontrato}}</li>
+                      <li>{{item.salariomin}}</li>
+                     </ul>
 
                       <!-- <h5>Herramientas base de datos</h5>
                       <ul>
