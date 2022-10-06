@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { infopersona } from '../interfaces/info.interface';
+import { infopersona } from '../interfaces/infopersona.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +19,7 @@ export class InfobasicoService {
      .subscribe((resp: infopersona) =>{
        this.persona = resp;
        this.cargando = false;
-      //console.log(resp)
+      console.log(this.persona)
      })
   }
 
