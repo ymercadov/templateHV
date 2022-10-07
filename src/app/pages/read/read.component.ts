@@ -12,7 +12,7 @@ import { experiencialogros } from '../../interfaces/experiencialogros.interfaces
 
 export class ReadComponent implements OnInit {
 
-  detalleExperienciaLogros: experiencialogros[] = []
+ public  detalleExperienciaLogros: experiencialogros
 
   constructor(private route:ActivatedRoute,
               private experiencialogrosService:ExperiencialogrosService ) { }
@@ -21,10 +21,10 @@ export class ReadComponent implements OnInit {
     this.route.params
     .subscribe(para =>  {
       this.experiencialogrosService.getExperienciaLogros(para['Id'])
-      .subscribe((resp: experiencialogros[]) => {
+      .subscribe((resp: experiencialogros) => {
 
         this.detalleExperienciaLogros = resp;
-        //console.log(this.detalleExperienciaLogros);
+        console.log(this.detalleExperienciaLogros);
       });
     });
   }
