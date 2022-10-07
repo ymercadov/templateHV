@@ -8,7 +8,7 @@ import { HerramientasService } from '../../services/herramientas.service';
 })
 export class HerramientasComponent implements OnInit {
 
-  constructor(private herramientasService: HerramientasService) { }
+  constructor(public herramientasService: HerramientasService) { }
 
   ngOnInit() {
   }

@@ -12,7 +12,7 @@ export class AboutComponent implements OnInit {
   stripedPB: boolean;    
   animatedPB: boolean;    
 
-  constructor(private infobasicoService:InfobasicoService) { }
+  constructor(public infobasicoService:InfobasicoService) { }
 
   ngOnInit() {
   }

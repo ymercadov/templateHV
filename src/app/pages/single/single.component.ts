@@ -9,7 +9,7 @@ import { SingleService } from '../../services/single.service';
 })
 export class SingleComponent implements OnInit {
 
-  constructor(private singleService:SingleService) { }
+  constructor(public singleService:SingleService) { }
 
   ngOnInit() {
    
