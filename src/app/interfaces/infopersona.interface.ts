@@ -9,5 +9,7 @@ export interface infopersona {
   numeroDoc?: string;
   profesion?: string;
   telefono?: string;
-  email?: string
+  email?: string,
+  nombrehv?:string;
+  pathhojavida?:string;
 }
