@@ -80,9 +80,13 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
 
+.especificar-p{
+  text-align: justify;
+}
+
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem;  
 }
 
 abbr[title],
@@ -7282,6 +7286,9 @@ button.bg-dark:focus {
 .mr-5,
 .mx-5 {
   margin-right: 3rem !important;
+}
+.especificar-mb-5{
+  margin-bottom: 1.5rem !important;
 }
 
 .mb-5,
