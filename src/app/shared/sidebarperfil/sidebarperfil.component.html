@@ -1,11 +1,13 @@
   <div *ngIf="infobasicoService.persona" class="sidebar-text d-flex flex-column h-100 justify-content-center text-center">
       <img class="mx-auto d-block w-75 bg-primary img-fluid rounded-circle mb-4 p-3" 
       [src]="infobasicoService.persona.foto" alt="Image">
-      <h1 class="font-weight-bold">{{infobasicoService.persona.nombre}}</h1>
-      <p class="mb-4">
+      <h4 class="font-weight-bold">{{infobasicoService.persona.nombre}}</h4>      
+      <small class="mr-2 text-muted"><h6>{{infobasicoService.persona.profesion}}</h6></small>
+      <small class="mr-2 text-muted"><h6>{{infobasicoService.persona.especializacion}}</h6></small>
+      <p class="mb-4 especificar-p">
         {{infobasicoService.persona.algosobremi}}        
         </p>
-      <div class="d-flex justify-content-center mb-5">
+      <div class="especificar-mb-5 d-flex justify-content-center">
           <a *ngFor = "let item of inforedsocialService.redSocial" 
               class="btn btn-outline-primary mr-2" target="_blank" [href]="item.link">
               <i [class]="item.icono"></i>
