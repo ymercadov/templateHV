@@ -4,10 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve -o",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && ng build",
+    "build": "set NODE_OPTIONS=--openssl-legacy-provider && ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e"    
   },
   "private": true,
   "dependencies": {
