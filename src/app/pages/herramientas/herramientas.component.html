@@ -36,7 +36,8 @@
                       <div *ngFor="let item of herramientasService.lsttipoHerramienta"  class="bootstrap-tagsinput">                       
                         <span class="tag label label-info">
                           <i [class]="item.icono"></i>
-                          {{item.nombre}} <span *ngIf="item.anioexperiencia != 0">[<b>{{item.anioexperiencia}} años</b>]</span>
+                          {{item.nombre}} 
+                          <!-- <span *ngIf="item.anioexperiencia != 0">[<b>{{item.anioexperiencia}} años</b>]</span> -->
                           <span data-role="remove">
                           </span>
                         </span>
